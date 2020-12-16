@@ -6,7 +6,7 @@ export default new VueRouter({
   routes: [
     {
       name: "Search",
-      path: "/search",
+      path: "",
       component: Search,
       props: (route) => ({ query: route.query.q, page: route.query.page }),
     },
