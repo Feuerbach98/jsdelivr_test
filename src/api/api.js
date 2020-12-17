@@ -1,8 +1,7 @@
 const REGISTRY_URL = `https://registry.npmjs.org/-/v1/search`;
-const CORS_URL =`https://cors-anywhere.herokuapp.com/`;
 const API_URL = `https://data.jsdelivr.com/v1/package/npm/`;
 
-const request = (url ,param = '') => fetch(`${CORS_URL}${url}${param}`)
+const request = (url ,param = '') => fetch(`${url}${param}`)
   .then((response) => {
     if (!response.ok) {
       throw new Error(`${response.status} - ${response.statusText}`);

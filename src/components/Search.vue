@@ -139,8 +139,8 @@ export default {
       position: relative;
       float: left;
       padding: 10px;
+      color: #2c3e50;
       text-decoration: none;
-      color: white;
       margin-left: -1px;
       outline: none;
     }

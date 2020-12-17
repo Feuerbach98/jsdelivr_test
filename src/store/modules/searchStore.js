@@ -5,7 +5,7 @@ export default {
     async fetchPackages(ctx, query) {
       ctx.commit("updateState", {
         prop: "searchResult",
-        result: await getPackagesFromServer(query, 20),
+        result: await getPackagesFromServer(query, 200),
       });
     },
     async fetchPackage(ctx, query) {
